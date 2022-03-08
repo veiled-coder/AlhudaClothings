@@ -1,0 +1,12 @@
+
+// overraide bootsrap by defining the variables before declaration
+
+@import "_abstracts/custom-variables";
+@import '_abstracts/variables';
+@import "_components/animation";
+@import "_base/reset";
+@import "_layout/header";
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
+

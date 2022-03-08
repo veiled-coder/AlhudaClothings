@@ -1,0 +1,259 @@
+// // GENERAL STYLE FOR THE WHOLE HEADER SECTION
+
+
+.header{
+    font-family: $roboto;
+    font-size: 4rem;
+    background-color: $bodyblue;
+    
+&-containerDiv{
+      background: url(/images/nikob4.jpg) no-repeat center;
+      background-size: cover;
+}
+}
+
+.nav{
+    background-color: $navblue;
+    font-family: $roboto;
+ 
+
+&-icon{
+    
+    height: 3rem;
+}
+
+
+}
+ nav ul li .nav-link{
+    color: $deepblue;
+    font-weight: 600;
+}
+nav ul li .nav-link:hover{
+    color: $deepblue;
+}
+.nav-li--about img,.nav-li--contact img{
+    visibility: hidden;
+}
+
+.nav-li--about:hover img,.nav-li--contact:hover img{
+    visibility:visible;
+}
+
+.nav-li--gallery .nav-li--gallery_display{
+    visibility: hidden;
+}
+
+
+.nav-li--gallery:hover .nav-li--gallery_display{
+    visibility: visible;
+}
+
+.nav-li--gallery_display{
+    width: 150%;
+    height: 25rem;
+    background-color: $deepblue;
+    color: white;
+    font-family: $outfit;
+    font-weight: 300;
+}
+
+// MOBILE MENU
+
+.M{
+    animation-name: slidetoleft;
+    animation-duration: 4s;
+
+}
+
+
+
+
+@keyframes slidetoleft{
+  0%{
+    background-color: white;
+  }
+  25%{
+    background-color: red;
+  }
+  50%{
+    background-color: yellow;
+  }
+  100%{
+    background-color: gainsboro;
+  }
+}
+
+
+
+
+
+
+
+
+
+// %flexrow{
+//     display:flex;
+//     flex-direction:row;
+    
+
+// }
+// %flexcolon{
+//     display:flex;
+//     flex-direction:column;
+    
+// }
+
+// header{
+// //     grid-column: 2/5;
+// //     grid-row: 1/2;
+// //    @extend %flexcolon;
+// //     height: 100vh;
+// //     background-image:url(/img/nikob4.jpg);
+// //     background-size: cover;
+// //     background-position: right;
+// //     justify-content: space-between;
+//     // position: relative;
+//     font-family: $roboto;
+    
+
+
+   
+// }
+// // THE NAVIGATION SECTION OF THE HEADER
+
+// .nav{
+//     padding-top: 1rem;
+//     font-size: 2.5rem;
+//     font-weight: 600;
+//     background-color: #6eb8f5;
+//     width: 100%;
+   
+// &-ul{
+
+//         @extend %flexrow;
+//          justify-content: space-around;
+//          align-items: center;
+       
+//      }
+      
+// &-li{
+//      @extend %flexcolon;
+//       align-items: center;
+    
+//  }    
+// &links{
+//   color:$deepblue;
+//   position: relative;
+// }  
+// &-icon,&-icon__gallery{
+//         width: auto;
+//         height:3rem;
+//         visibility: hidden;
+      
+//    }
+//  &-icon__home,&-icon__gallery{
+//      visibility: visible;
+//  }  
+// &-li:hover &-icon{
+//       visibility: visible;
+//   } 
+    
+// }
+
+
+// // THE GALLERY DROP-DOWN NAV
+// .Navgallery{
+// position: relative;
+// @extend %flexcolon;
+// align-items: center;
+// z-index: 5;
+
+
+// &-ul{
+//     background-color: $deepblue;
+//     display: grid; 
+//     grid-template-columns: minmax(max-content,min-content);
+//     text-align: center;
+//     grid-gap: 2rem;
+//     padding: 2rem;
+// }
+// &-links{
+//     font-family: $outfit;
+//     font-weight: 300;
+//     font-size: 2rem;
+//     text-transform: capitalize;
+//     color: white;
+//     transition-property: border,border-radius,padding-left,padding-right;
+//      transition-duration: .3s;
+//     // -webkit-transition-duration: .3s;
+    
+
+//     &:hover{
+//         background-color: $bodyblue;
+//         border: 1px dashed white;
+//         border-radius: 20%;
+//         padding-left: 2rem;
+//         padding-right: 2rem; 
+      
+//     }
+// }
+// &-ul__div{
+//     position: absolute;
+//     top: 35%;
+//     visibility: hidden;
+// }
+
+// &:hover &-ul__div{
+//     visibility: visible;
+//     padding-top: 4rem;
+// }
+// }
+
+
+
+
+// // THIS IS THE HEADER TEXT
+// .Header-hero{
+//     align-self: flex-end;
+//     @extend %flexcolon;
+//     align-items: center;
+//      margin-bottom: 10%;
+//      margin-right: 5%;
+//      animation-name:fromtop;
+//     animation-duration: 3s;
+//      animation-fill-mode: forwards;
+//      animation-delay: 4s;
+   
+
+   
+// &__textDiv{
+// @extend %flexcolon;
+// align-items: center;
+// background-image: url(/img/nikob-bg5.png);
+// background-clip: text;
+// color: transparent;
+// -webkit-background-clip: text;
+// font-family: $abel;
+// font-weight: 200;
+
+
+
+// }
+// &__h1{
+//     @extend %flexcolon;
+//     align-items: center;
+//     font-size: 7rem;
+
+// }
+// }
+// .marhaban{
+//     font-size: 7rem;
+//     font-family: $pirata;
+//     letter-spacing: 1rem;
+//     padding-top: 1rem;
+//     padding-bottom: 1rem;
+//     font-weight: 200;
+//     color: $deepblue;
+   
+
+// }

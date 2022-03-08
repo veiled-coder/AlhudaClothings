@@ -1,0 +1,46 @@
+.about-text__button{
+    @include button($navblue);
+    text-transform: capitalize;
+  
+}
+.about-round__button{
+    @include button();
+    color: white;
+    background-image: url(/img/sea.jpeg);
+    background-clip: border-box;
+ 
+  
+}
+%btnhover {
+    transform: translateY(-.5rem);
+}
+.btn:hover{
+    @extend %btnhover;
+}
+.items-btn{
+    @include button($navblue);
+    grid-column: 2/5;
+    justify-self: center;
+    padding: 2rem 7rem;
+  font-size: 3rem;
+    margin-bottom: 8rem;
+    font-family: $pirata;
+ color: black;
+    &:hover{
+        @extend %btnhover;
+    }
+ 
+}
+
+
+.subscribe-btn{
+    width: 100%;
+    background-color: white;
+    font-family: $outfit;
+    transition-property: all;
+    transition-duration: .5s;
+}
+.subscribe-btn:hover{
+    @extend %btnhover;
+    box-shadow: 0px 2px 9px 0px rgba(172, 236, 152, 0.808);
+}

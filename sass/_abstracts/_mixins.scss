@@ -1,0 +1,31 @@
+// @mixin flex($flexdirection:row,$justifycontent:flex-start,$alignitems:stretch,
+//                         $alignself:auto){
+    
+//     flex-direction: $flexdirection;
+//     justify-content: $justifycontent;
+//     align-items: $alignitems;
+//     align-self: $alignself;
+// }
+// @mixin button($bg-color:transparent){
+//     margin-top: 3rem;
+//     padding: 2rem;
+//     border-radius: 20%;
+//     background-color:$bg-color;
+//     color: $deepblue;
+//     font-size: 1.8rem;
+//     border: 1px dashed white;
+//     box-shadow: -1px 1px 2px 0px black;
+//     transition-property: all;
+//     transition-duration: .3s;
+// };
+
+// @mixin h2style($color:black){
+//     padding-bottom: 4rem;
+//     font-size: 4rem;
+//     font-family: $pirata;
+//     color: $color;
+//     word-spacing: .5rem;
+//     letter-spacing: .2rem;
+    
+//     }
+    

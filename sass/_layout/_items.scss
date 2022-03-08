@@ -1,0 +1,168 @@
+// %itemImg{
+//     width: 27rem;
+//     height: 35rem;
+//     box-shadow: $navblue 2px 2px 2px 0px ,
+//     -2px -2px 2px 0px $navblue ;
+//     object-fit: cover;
+
+//     background-color: white;
+    
+    
+// }
+// .items{
+//     margin-top: 7rem;
+//     grid-row: 3/4;
+//     grid-column: 1/6;
+//     display: grid;
+//     grid-template-columns: 1fr repeat(3,minmax(min-content,30rem)) 1fr;
+//      background-image: url(/img/blue-cloud.jpg);
+//     background-size: cover;
+  
+  
+
+//    &-h2{
+//        grid-column: 2/5;
+//        justify-self: center;
+//        font-family: $shadow;
+//        padding-top: 4rem;
+//        padding-bottom: 10rem;
+//        text-transform: capitalize;
+//        font-size: 10rem;
+//        color:rgb(255, 255, 255);
+//        font-weight: 100;
+     
+//    }
+  
+
+// }
+
+// .item{
+//     border-bottom: 2px dashed $deepblue;
+//     border-top: 2px dashed $deepblue;
+
+
+//       position: relative;
+//       padding-top: 5rem;
+//       padding-bottom: 5rem;
+//       background-color:white;
+//       margin-bottom: 20rem;
+
+//       &1{
+//       grid-column: 1/5;
+     
+
+//       &-div{
+//         padding-left: 30rem;
+//         padding-right: 30rem;
+//        }
+//        &-pDiv{
+//         display: flex;
+//         justify-content: flex-end;
+//     }
+//     }
+    
+//     &2{
+    
+//         grid-column: 1/-1;
+//         padding-right: 35rem;
+//         position: relative;
+       
+//         &-pDiv{
+//             @extend %flexrow;
+//             padding-left: 5rem;
+//             width: 70%;
+//             height: 100%;
+//             align-items: center;
+//         }
+//     }
+//     &3{
+   
+//         grid-column: 2/-1;
+//         margin-bottom: 5rem;
+
+//         &-pDiv{
+//             @extend %flexrow;
+//             justify-content: space-between;
+//            padding-left: 60rem;
+//            align-items: center;
+//            padding-right: 5rem;
+//         }
+//     }
+   
+    
+    
+//     &1-p, &2-p,&3-p{
+//         @extend %flexcolon;
+//     }
+//     &2-p{
+//     padding-left: 15rem;
+//     }
+
+//     &-img1{
+//         position: absolute;
+//         @extend %itemImg;
+//         transform: rotate(-7deg);
+//         top: 5rem;
+       
+//     } 
+//     &-img2{
+//         @extend %itemImg;
+//         position: absolute;
+//         left: 58%;
+//         top: 17%;
+//         transform: rotate(10deg);
+//     }
+//     &-img3{
+//         @extend %itemImg;
+//         position: absolute;
+//         top: -10rem;
+//         left: -7rem;
+//         transform: rotate(-10deg);
+//     }
+    
+    
+// }
+
+// .number{
+//     height: 20rem;
+//     width: 20rem;
+//     border: 3px solid $navblue;
+//     background-clip: border-box;
+//     -webkit-background-clip: border-box;
+ 
+//     background-image: url(/img/purple-flower.jpg);
+//     background-size: cover;
+//     border-radius: 50%;
+//     box-shadow: .5rem 0px 0px $deepblue;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     font-size: 4rem;
+//     font-family: $pirata;
+//     letter-spacing: 4px;
+//     color:white;
+//     position: relative;
+
+// &1{
+//     grid-column: 5/6;
+//     grid-row: 2/3;
+//     margin-top: 3rem;
+//     justify-self: center;
+    
+// }
+// &-view{
+//     font-size: 1.5rem;
+//     font-family: $shadow;
+//     letter-spacing: 0px;
+//     font-weight: 500;
+//     bottom: 10%;
+//     position: absolute;
+    
+   
+   
+// }
+// &3{
+//     order: 2;
+// }
+// }
