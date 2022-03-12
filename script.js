@@ -7,7 +7,7 @@ const MobileContainer=document.getElementById("MobileNav-divContainer");
 
 ShowMenu.addEventListener('click',()=>{
 MobileMenu.style.left='50%';
-MobileContainer.style.background='rgb(228, 240, 250)';
+MobileContainer.style.background='rgba(109, 164, 209, 0.664)';
     
    
 })
