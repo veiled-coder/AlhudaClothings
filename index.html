@@ -5,16 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="sass/huda.css">
-    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> -->
-    
-  
     <title>Al-Huda-Clothings</title>
 </head>
 <body>
     <!-- THIS IS THE HEADER SECTION -->
 
-        <header class="header vh-100 position-relative px-1 px-md-3 px-lg-15 d-flex  justify-content-between align-items-start">
-         <div class="h-100 w-100 header-containerDiv">   
+        <header class="header vh-100 vw-100 position-relative px-1 px-md-3 px-lg-15 d-flex  justify-content-between align-items-start overflow-hidden">
+        <div class="h-100 w-100 header-containerDiv">   
         <nav class="nav pt-5  d-md-flex d-none w-100 container-fluid px-0">
             <ul class="nav-ul w-100 d-flex list-unstyled align-items-center justify-content-lg-around justify-content-between fs-1" style="height: 4rem;">
                 <li class="nav-li nav-li--home    d-flex flex-column align-items-center px-0"><img src="images/home-icon.png" class="nav-icon "><a class=" nav-link p-0">HOME</a></li>
@@ -38,15 +35,16 @@
         </nav>
        
         <!-- MOBILE NAV -->
-        <nav class="d-md-none pt-5 w-100">
-            <ul class="d-flex justify-content-between align-items-center list-unstyled">
+        <div id ="MobileNav-divContainer" class="w-100 h-100">
+        <nav class="d-md-none  w-100 h-100">
+            <ul class="MobileNav-bar d-flex justify-content-between align-items-center list-unstyled h-10">
                 <li><img src="images/logo.svg"></li>
                 <li><img src="images/icon-hamburger.svg" class="Mobile-icon"></li>
             </ul>
         
-           <div class="Mobile-menu d-none w-50 h-75    px-sm-4 px-0 py-5 d-flex flex-column justify-content-between  position-absolute top-0 end-0" style="background-color: white; z-index: 11;">
+           <div id ="Mobile-Menu" class="Mobile-menu  w-100 h-100 position-absolute    d-flex flex-column justify-content-between" style=" z-index: 11;">
               
-            <ul class=" Mobile-menu--ul h-100 w-100 fs-2 list-unstyled d-flex flex-column  justify-content-between align-items-center">
+            <ul class="Mobile-menu--ul h-75 w-50 px-sm-4 px-0 py-5 fs-2 list-unstyled d-flex flex-column  justify-content-between align-items-center" style="background-color: aliceblue;">
                     <li class="nav-li nav-li--home    d-flex flex-column align-items-center px-0"><img src="images/home-icon.png" class="nav-icon "><a class=" nav-link p-0">HOME</a></li>
                     <li class="nav-li Mobilenav-li--about   d-flex flex-column align-items-center px-0"><img src="images/about-icon.svg" class="nav-icon "><a class=" nav-link p-0">ABOUT</a></li>
                     <li class="nav-li nav-li--gallery d-flex flex-column align-items-center px-0 position-relative">
@@ -70,8 +68,7 @@
         
         </nav>
          </div>
-        <div class="overlay d-none d-md-none position-absolute w-100 h-100 top-0" style="background: linear-gradient(to right, rgba(236, 230, 230, 0.39) , rgba(226, 226, 211, 0.568)),url(/images/bg-pattern-intro-mobile.svg);"></div>
-        
+        </div>
         </header>
             
             

@@ -2,19 +2,18 @@
 
 
 const ShowMenu=document.querySelector(".Mobile-icon");
-const MobileMenu=document.querySelector(".Mobile-menu");
-const Overlay=document.querySelector('.overlay');
+const MobileMenu=document.getElementById("Mobile-Menu");
+const MobileContainer=document.getElementById("MobileNav-divContainer");
 
 ShowMenu.addEventListener('click',()=>{
-    MobileMenu.classList.remove('d-none');
-    MobileMenu.classList.add('M')
-
-    Overlay.classList.remove('d-none')
-
+MobileMenu.style.left='50%';
+MobileContainer.style.background='rgb(228, 240, 250)';
+    
+   
 })
 
-Overlay.addEventListener('click',()=>{
-    MobileMenu.classList.add('d-none');
-    Overlay.classList.add('d-none','d-md-none')
+// Overlay.addEventListener('click',()=>{
+//     MobileMenu.classList.add('d-none');
+//     Overlay.classList.add('d-none','d-md-none')
 
-})
+// })

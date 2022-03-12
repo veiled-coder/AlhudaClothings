@@ -1,18 +1,20 @@
 // // GENERAL STYLE FOR THE WHOLE HEADER SECTION
 
-
 .header{
     font-family: $roboto;
     font-size: 4rem;
     background-color: $bodyblue;
     
+  
+    
 &-containerDiv{
-      background: url(/images/nikob4.jpg) no-repeat center;
+      background: url(/images/nikob4.jpg) no-repeat center left;
       background-size: cover;
+
 }
 }
 
-.nav{
+.nav,.MobileNav-bar{
     background-color: $navblue;
     font-family: $roboto;
  
@@ -59,10 +61,10 @@ nav ul li .nav-link:hover{
 
 // MOBILE MENU
 
-.M{
-    animation-name: slidetoleft;
-    animation-duration: 4s;
-
+#Mobile-Menu{
+top: 0;
+left: 100%;
+transition: all .6s ease-out;
 }
 
 
