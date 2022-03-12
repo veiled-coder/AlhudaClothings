@@ -11,9 +11,3 @@ MobileContainer.style.background='rgba(109, 164, 209, 0.664)';
     
    
 })
-
-// Overlay.addEventListener('click',()=>{
-//     MobileMenu.classList.add('d-none');
-//     Overlay.classList.add('d-none','d-md-none')
-
-// })
