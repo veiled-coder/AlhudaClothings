@@ -61,99 +61,26 @@ nav ul li .nav-link:hover{
 
 // MOBILE MENU
 
-#Mobile-Menu{
+.Mobile-menu{
 top: 0;
 left: 100%;
-transition: all .6s ease-out;
+background: aliceblue;
+transition: all .3s ease-out;
+transform: translateX(0);
+
 
 }
+.MobileNav-divContainer{
 
-
-
-
-@keyframes slidetoleft{
-  0%{
-    background-color: white;
-  }
-  25%{
-    background-color: red;
-  }
-  50%{
-    background-color: yellow;
-  }
-  100%{
-    background-color: gainsboro;
-  }
+  
+  transition: transform 0.3s ease-out;
+  
 }
 
 
 
 
 
-
-
-
-
-// %flexrow{
-//     display:flex;
-//     flex-direction:row;
-    
-
-// }
-// %flexcolon{
-//     display:flex;
-//     flex-direction:column;
-    
-// }
-
-// header{
-// //     grid-column: 2/5;
-// //     grid-row: 1/2;
-// //    @extend %flexcolon;
-// //     height: 100vh;
-// //     background-image:url(/img/nikob4.jpg);
-// //     background-size: cover;
-// //     background-position: right;
-// //     justify-content: space-between;
-//     // position: relative;
-//     font-family: $roboto;
-    
-
-
-   
-// }
-// // THE NAVIGATION SECTION OF THE HEADER
-
-// .nav{
-//     padding-top: 1rem;
-//     font-size: 2.5rem;
-//     font-weight: 600;
-//     background-color: #6eb8f5;
-//     width: 100%;
-   
-// &-ul{
-
-//         @extend %flexrow;
-//          justify-content: space-around;
-//          align-items: center;
-       
-//      }
-      
-// &-li{
-//      @extend %flexcolon;
-//       align-items: center;
-    
-//  }    
-// &links{
-//   color:$deepblue;
-//   position: relative;
-// }  
-// &-icon,&-icon__gallery{
-//         width: auto;
-//         height:3rem;
-//         visibility: hidden;
-      
-//    }
 //  &-icon__home,&-icon__gallery{
 //      visibility: visible;
 //  }  
