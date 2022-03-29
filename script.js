@@ -44,7 +44,6 @@ currentIndex=index;
 isDragging=true;
 console.log('i was touched by a finger');
 startPosition=getPositionX(event);
-console.log(startPosition);
 animationID=requestAnimationFrame(animationFn);
 
     }
@@ -54,8 +53,14 @@ function touchEnd(){
     console.log('touch ended');
     isDragging=false;
     cancelAnimationFrame(animationID);
-    console.log(animationID);
-
+    const movedby =currentTranslate-prevTranslate;
+console.log(movedby);
+if (movedby <100){
+    currentTranslate=50;
+    }
+else{
+currentTranslate=100;}
+   
 }
 
 
@@ -64,11 +69,10 @@ function touchMove(event){
     
     
     const currentPosition=getPositionX(event);
-    console.log(currentPosition);
     currentTranslate=prevTranslate+currentPosition-startPosition;
-    console.log(currentTranslate);
+
     bgChange();
-    // leftPosition();
+   
 }
 function getPositionX(event){
  return event.touches[0].clientX;
@@ -77,8 +81,7 @@ function getPositionX(event){
 // when the
 function animationFn(){
 
-
-MobileMenu.style.transform=`translateX(${currentTranslate}px)`;
+setSliderPosition()
 
 if (isDragging) requestAnimationFrame(animationFn)
 }
@@ -86,6 +89,17 @@ function bgChange(){
 return  currentTranslate<0?MobileContainer.style.background="rgba(109, 164, 209, 0.26)":MobileContainer.style.background="transparent";
 }
 
+function setSliderPosition(){
+    // MobileMenu.style.transform=`translateX(${currentTranslate}px)`;
+    MobileMenu.style.left=`${currentTranslate}%`;
+
+
+}
+// function setPositionByIndex(){
+//     currentTranslate =currentIndex * -window.innerWidth
+//     prevTranslate=currentTranslate
+//     setSliderPosition();
+// }
 // function leftPosition(){
 
 // return currentTranslate<0?MobileMenu.style.left="50%":MobileMenu.style.left="100%"

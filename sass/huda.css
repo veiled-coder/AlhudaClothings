@@ -71,8 +71,7 @@ nav ul li .nav-link:hover {
   top: 0;
   left: 100%;
   background: aliceblue;
-  transition: all .3s ease-out;
-  transform: translateX(0); }
+  transition: left .3s ease-out; }
 
 .MobileNav-divContainer {
   transition: transform 0.3s ease-out; }
