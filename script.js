@@ -10,7 +10,8 @@ MobileContainer2=Array.from(document.querySelectorAll(".MobileNav-Container"))
 // harmburger icon animation
 
 ShowMenu.addEventListener('click',()=>{
-
+MobileMenu.style.left="50%";
+console.log('clicked hamburger');
 // MobileContainer.style.background='rgba(109, 164, 209, 0.26)';
 
     
