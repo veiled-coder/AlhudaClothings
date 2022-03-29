@@ -10,8 +10,8 @@ MobileContainer2=Array.from(document.querySelectorAll(".MobileNav-Container"))
 // harmburger icon animation
 
 ShowMenu.addEventListener('click',()=>{
-MobileMenu.style.left='50%';
-MobileContainer.style.background='rgba(109, 164, 209, 0.26)';
+
+// MobileContainer.style.background='rgba(109, 164, 209, 0.26)';
 
     
    
@@ -52,45 +52,44 @@ animationID=requestAnimationFrame(animationFn);
 function touchEnd(){
     console.log('touch ended');
     isDragging=false;
-    cancelAnimationFrame(animationID);
+    // cancelAnimationFrame(animationID);
     const movedby =currentTranslate-prevTranslate;
 console.log(movedby);
 if (movedby <100){
     currentTranslate=50;
+    bgChange();
     }
 else{
-currentTranslate=100;}
+currentTranslate=100;
+MobileContainer.style.background="none";
+}
    
 }
 
 
 function touchMove(event){
     console.log('moving your fingers');
-    
-    
     const currentPosition=getPositionX(event);
     currentTranslate=prevTranslate+currentPosition-startPosition;
-
-    bgChange();
-   
 }
+
 function getPositionX(event){
  return event.touches[0].clientX;
 
 }
-// when the
-function animationFn(){
 
-setSliderPosition()
+function animationFn(){
+setMenuPosition()
 
 if (isDragging) requestAnimationFrame(animationFn)
 }
+
 function bgChange(){
-return  currentTranslate<0?MobileContainer.style.background="rgba(109, 164, 209, 0.26)":MobileContainer.style.background="transparent";
+return MobileContainer.style.background="rgba(109,164,209,0.26)";
 }
 
-function setSliderPosition(){
-    // MobileMenu.style.transform=`translateX(${currentTranslate}px)`;
+function setMenuPosition(){
+   
     MobileMenu.style.left=`${currentTranslate}%`;
 
 
@@ -100,7 +99,4 @@ function setSliderPosition(){
 //     prevTranslate=currentTranslate
 //     setSliderPosition();
 // }
-// function leftPosition(){
 
-// return currentTranslate<0?MobileMenu.style.left="50%":MobileMenu.style.left="100%"
-// }

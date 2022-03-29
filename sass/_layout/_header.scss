@@ -63,11 +63,8 @@ nav ul li .nav-link:hover{
 
 .Mobile-menu{
 top: 0;
-left: 100%;
-background: aliceblue;
-transition: left .3s ease-out;
-
-
+right: 0;
+transition: all 4s ease-out;
 
 }
 .MobileNav-divContainer{
@@ -77,7 +74,9 @@ transition: left .3s ease-out;
   
 }
 
-
+.MobileNav-Container{
+    width: 100%;
+}
 
 
 
