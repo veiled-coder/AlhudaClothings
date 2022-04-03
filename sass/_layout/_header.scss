@@ -16,9 +16,9 @@
 
 .nav,.MobileNav-bar{
     background-color: $navblue;
+    // background-color: rgb(128, 186, 23;
     font-family: $roboto;
-  background-color:rgba(109, 164, 209, 0.26);
-
+ 
 &-icon{
     
     height: 3rem;
@@ -68,7 +68,7 @@ nav ul li .nav-link:hover{
  top: 0;
  left: 100%;
  z-index: 10;
- transition: left .7s ease;
+ transition: left .5s ease;
  z-index: 12;
 }
 
@@ -76,6 +76,6 @@ nav ul li .nav-link:hover{
     z-index: 10;
     display: none;
     animation-name: bg;
-    animation-duration: .5s;
+    animation-duration: .3s;
 
     }
