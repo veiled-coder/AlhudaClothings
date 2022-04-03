@@ -1,51 +1,14 @@
+// Mobile header background animation
+//background animation
 
-// [data-aos="fromLeft"] {
-//   opacity: 0;
-//   margin-left: -20rem;
-//   transition-property: margin-left, opacity,;
-
-//   &.aos-animate {
-//     opacity: 1;
-//     margin-left: 0;
-//   }
-
-// }
-
-// [data-aos="fromRight"] {
-//   opacity: 0;
-//   margin-left: 20rem;
-//   transition-property: margin-left, opacity,;
-
-//   &.aos-animate {
-//     opacity: 1;
-//     margin-left: 0;
-//   }
-
-// }
-// [data-aos="fromBottom"] {
-//   opacity: 0;
-//   margin-top: 20rem;
-//   transition-property:  opacity,margin-top;
-
-//   &.aos-animate {
-//     opacity: 1;
-//     margin-top: 0;
-//   }
-
-// }
-
-
-@keyframes slidetoleft{
-  0%{
-    background-color: white;
-  }
-  25%{
-    background-color: red;
-  }
-  50%{
-    background-color: yellow;
-  }
-  100%{
-    background-color: gainsboro;
-  }
+@keyframes bg {
+    0%{
+        opacity: 0;
+    }
+    50%{
+       opacity: .5;
+    }
+    100%{
+       opacity: 1;
+    }
 }

@@ -61,128 +61,21 @@ nav ul li .nav-link:hover{
 
 // MOBILE MENU
 
-.Mobile-menu{
-top: 0;
-right: 0;
-transition: all 4s ease-out;
 
-}
-.MobileNav-divContainer{
 
-  
-  transition: transform 0.3s ease-out;
-  
+
+.Mobile-menu--ul{
+ top: 0;
+ left: 100%;
+ z-index: 10;
+ transition: left .7s ease;
+ z-index: 12;
 }
 
-.MobileNav-Container{
-    width: 100%;
-}
+.overlay{
+    z-index: 10;
+    display: none;
+    animation-name: bg;
+    animation-duration: .5s;
 
-
-
-//  &-icon__home,&-icon__gallery{
-//      visibility: visible;
-//  }  
-// &-li:hover &-icon{
-//       visibility: visible;
-//   } 
-    
-// }
-
-
-// // THE GALLERY DROP-DOWN NAV
-// .Navgallery{
-// position: relative;
-// @extend %flexcolon;
-// align-items: center;
-// z-index: 5;
-
-
-// &-ul{
-//     background-color: $deepblue;
-//     display: grid; 
-//     grid-template-columns: minmax(max-content,min-content);
-//     text-align: center;
-//     grid-gap: 2rem;
-//     padding: 2rem;
-// }
-// &-links{
-//     font-family: $outfit;
-//     font-weight: 300;
-//     font-size: 2rem;
-//     text-transform: capitalize;
-//     color: white;
-//     transition-property: border,border-radius,padding-left,padding-right;
-//      transition-duration: .3s;
-//     // -webkit-transition-duration: .3s;
-    
-
-//     &:hover{
-//         background-color: $bodyblue;
-//         border: 1px dashed white;
-//         border-radius: 20%;
-//         padding-left: 2rem;
-//         padding-right: 2rem; 
-      
-//     }
-// }
-// &-ul__div{
-//     position: absolute;
-//     top: 35%;
-//     visibility: hidden;
-// }
-
-// &:hover &-ul__div{
-//     visibility: visible;
-//     padding-top: 4rem;
-// }
-// }
-
-
-
-
-// // THIS IS THE HEADER TEXT
-// .Header-hero{
-//     align-self: flex-end;
-//     @extend %flexcolon;
-//     align-items: center;
-//      margin-bottom: 10%;
-//      margin-right: 5%;
-//      animation-name:fromtop;
-//     animation-duration: 3s;
-//      animation-fill-mode: forwards;
-//      animation-delay: 4s;
-   
-
-   
-// &__textDiv{
-// @extend %flexcolon;
-// align-items: center;
-// background-image: url(/img/nikob-bg5.png);
-// background-clip: text;
-// color: transparent;
-// -webkit-background-clip: text;
-// font-family: $abel;
-// font-weight: 200;
-
-
-
-// }
-// &__h1{
-//     @extend %flexcolon;
-//     align-items: center;
-//     font-size: 7rem;
-
-// }
-// }
-// .marhaban{
-//     font-size: 7rem;
-//     font-family: $pirata;
-//     letter-spacing: 1rem;
-//     padding-top: 1rem;
-//     padding-bottom: 1rem;
-//     font-weight: 200;
-//     color: $deepblue;
-   
-
-// }
+    }

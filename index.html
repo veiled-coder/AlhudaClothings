@@ -35,16 +35,15 @@
         </nav>
        
         <!-- MOBILE NAV -->
-        <div id ="MobileNav-divContainer" class="MobileNav-Container h-100">
-        <nav class="d-lg-none  w-100 h-100">
+        
+        <nav class="MobileNav-Container d-lg-none  w-100 h-100 position-relative" id="Mobile-nav--container">
             <ul class="MobileNav-bar d-flex justify-content-between align-items-center list-unstyled h-10">
                 <li><img src="images/logo.svg"></li>
-                <li><img src="images/icon-hamburger.svg" class="Mobile-icon"></li>
+                <li class="Mobile-icon"><img src="/images/icon-hamburger.svg"></li>
             </ul>
         
-           <div id ="Mobile-Menu" class="Mobile-menu  w-50 h-100 position-absolute    d-flex flex-column justify-content-between">
-              
-            <ul class="Mobile-menu--ul h-75 w-100 px-sm-4 px-0 py-5 fs-2 list-unstyled d-flex flex-column  justify-content-between align-items-center" style="background-color: aliceblue;">
+            
+            <ul id="Mobile-Menu" class="Mobile-menu--ul h-75 w-50 px-sm-4 px-0 py-5 fs-2 list-unstyled d-flex flex-column  justify-content-between align-items-center position-absolute" style="background-color: aliceblue;">
                     <li class="nav-li nav-li--home    d-flex flex-column align-items-center px-0"><img src="images/home-icon.png" class="nav-icon "><a class=" nav-link p-0">HOME</a></li>
                     <li class="nav-li Mobilenav-li--about   d-flex flex-column align-items-center px-0"><img src="images/about-icon.svg" class="nav-icon "><a class=" nav-link p-0">ABOUT</a></li>
                     <li class="nav-li nav-li--gallery d-flex flex-column align-items-center px-0 position-relative">
@@ -62,12 +61,13 @@
                     </li>
                     <li class="nav-li Mobilenav-li--contact d-flex flex-column align-items-center px-0"><img src="images/contact-icon.png" class=" nav-icon "><a class=" nav-link p-0">CONTACT</a></li>
                 </ul>
-                  
-               
-           </div>
-        
-        </nav>
-         </div>
+              
+                <aside class="overlay position-absolute top-0 w-100 h-100"></aside>   
+     
+        </nav> 
+      
+   
+         <!-- End of mobileNav -->
         </div>
         </header>
             

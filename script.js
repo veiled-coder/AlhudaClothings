@@ -1,103 +1,59 @@
 "use strict;"
 
 
-let ShowMenu=document.querySelector(".Mobile-icon"),
-MobileMenu=document.querySelector(".Mobile-menu"),
-MobileContainer=document.getElementById("MobileNav-divContainer"),
-MobileContainer2=Array.from(document.querySelectorAll(".MobileNav-Container"))
+let menuIcon=document.querySelector(".Mobile-icon"),
+mobileMenu=document.querySelector(".Mobile-menu--ul"),
+container=document.querySelector(".MobileNav-Container"),
+overlay=document.querySelector(".overlay");
 
 
-// harmburger icon animation
 
-ShowMenu.addEventListener('click',()=>{
-MobileMenu.style.left="50%";
-console.log('clicked hamburger');
-// MobileContainer.style.background='rgba(109, 164, 209, 0.26)';
 
-    
-   
+let initialX = 0;
+let moveX = 0;
+let MOVE_THRESHOLD=100;
+
+
+menuIcon.addEventListener("click",e=>{
+  mobileMenu.style.left= "50%";
+  overlay.style.display="block";
+ overlay.style.background="rgba(109, 164, 209, 0.26)";
+
 })
 
-// TOUCH SCREEN ANIMANTION
-let isDragging=false,
-startPosition=0,
-currentTranslate=0,
-prevTranslate=0,
-animationID=0,
-currentIndex=0;
 
 
-MobileContainer2.forEach(
 
-(menu,index)=>{
-menu.addEventListener('touchstart',touchStart(index))
-menu.addEventListener('touchend',touchEnd)
-menu.addEventListener('touchmove',touchMove)
-
+function touchStart(e){
+    initialX = e.touches[0].pageX;
+    console.log(initialX);
 
 }
-
-)
-
-function touchStart(index){
-return function(event){
-currentIndex=index;
-isDragging=true;
-console.log('i was touched by a finger');
-startPosition=getPositionX(event);
-animationID=requestAnimationFrame(animationFn);
-
-    }
+function touchMove(e){
+    let currentX = e.touches[0].pageX;
+    moveX = currentX - initialX;
+    console.log(currentX);
+    console.log(moveX);
 }
+function touchEnd(e){
+    if (moveX < MOVE_THRESHOLD * Math.sign(moveX)) {
+      mobileMenu.style.left= "50%";
+      overlay.style.display="block";
+      overlay.style.background="rgba(109, 164, 209, 0.26)";
 
-function touchEnd(){
-    console.log('touch ended');
-    isDragging=false;
-    // cancelAnimationFrame(animationID);
-    const movedby =currentTranslate-prevTranslate;
-console.log(movedby);
-if (movedby <100){
-    currentTranslate=50;
-    bgChange();
-    }
-else{
-currentTranslate=100;
-MobileContainer.style.background="none";
+  
+      } 
+    if (moveX > MOVE_THRESHOLD * Math.sign(moveX)) {
+        mobileMenu.style.left = "100%";
+        overlay.style.display="none";
+        
+      }
+    
+      moveX = 0;
 }
-   
-}
+container.addEventListener('touchstart',touchStart);
+container.addEventListener('touchmove',touchMove);
+container.addEventListener('touchend',touchEnd);
 
 
-function touchMove(event){
-    console.log('moving your fingers');
-    const currentPosition=getPositionX(event);
-    currentTranslate=prevTranslate+currentPosition-startPosition;
-}
-
-function getPositionX(event){
- return event.touches[0].clientX;
-
-}
-
-function animationFn(){
-setMenuPosition()
-
-if (isDragging) requestAnimationFrame(animationFn)
-}
-
-function bgChange(){
-return MobileContainer.style.background="rgba(109,164,209,0.26)";
-}
-
-function setMenuPosition(){
-   
-    MobileMenu.style.left=`${currentTranslate}%`;
-
-
-}
-// function setPositionByIndex(){
-//     currentTranslate =currentIndex * -window.innerWidth
-//     prevTranslate=currentTranslate
-//     setSliderPosition();
-// }
 
