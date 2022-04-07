@@ -3,7 +3,7 @@
 
 let menuIcon=document.querySelector(".Mobile-icon"),
 mobileMenu=document.querySelector(".Mobile-menu--ul"),
-container=document.querySelector(".MobileNav-Container"),
+container=document.querySelector(".header"),
 overlay=document.querySelector(".overlay");
 
 
@@ -26,7 +26,9 @@ function showMenu(){
   mobileMenu.style.left= "50%";
   overlay.style.display="block";
   overlay.classList.remove('bgNone');
-  overlay.style.background="rgba(109, 164, 209, 0.26)";
+  // overlay.style.background="rgba(109, 164, 209, 0.26)";
+    overlay.style.background="rgba(33, 37, 37, 0.345)    ";
+   
   overlay.classList.add('bgShow');
 }
 function removeMenu(){
@@ -37,6 +39,7 @@ function removeMenu(){
 function touchStart(e){
     initialX = e.touches[0].pageX;
     console.log(initialX);
+    console.log('touch nav');
 
 }
 function touchMove(e){

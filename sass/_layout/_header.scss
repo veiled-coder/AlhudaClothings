@@ -1,15 +1,21 @@
 // // GENERAL STYLE FOR THE WHOLE HEADER SECTION
-
+html{
+    font-size: 62.5%;
+}
 .header{
     font-family: $roboto;
     font-size: 4rem;
     background-color: $bodyblue;
+    overflow: hidden;
+    height: 90vh;
     
   
     
 &-containerDiv{
-      background: url(/images/nikob4.jpg) no-repeat center left;
+      background:  no-repeat;
       background-size: cover;
+  background-position: center;
+background-image:radial-gradient(rgba(113, 166, 235, 0.712), rgba(6, 25, 41, 0.486)),url("/images/nikob4.jpg");
 
 }
 }
@@ -19,7 +25,7 @@
     font-family: $roboto;
  
 &-icon{
-    
+    color: rgba(36, 83, 235, 0.815);
     height: 3rem;
 }
 
@@ -79,3 +85,78 @@ nav ul li .nav-link:hover{
     display: none;
   
 }
+// header content
+
+.header--text__first{
+    font-size: 10rem;
+    color: aliceblue;
+}
+.header--text__second{
+    font-size: 6rem;
+    color: aliceblue;
+    animation-name: bgShow;
+    animation-delay: .2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-timing-function: ease-in;
+    
+}
+
+.header--logo{
+    top: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+// header content 
+@media (min-width:992px){
+    .header--logo{
+    
+         right: 10%;
+}
+}
+   
+   @media (max-width:600px){
+       .header--text__second{
+           font-size: 6rem;
+       }
+       .header--text__first{
+
+        font-size: 7rem;
+       }
+   } 
+   
+   @media (max-width:500px){
+    .header--text__second{
+        font-size: 4.5rem;
+    }
+    .header--text__first{
+
+     font-size: 6rem;
+    }
+} 
+@media (max-width:375px){
+    .header--text__second{
+        font-size: 4rem;
+    }
+    .header--text__first{
+
+     font-size: 5rem;
+    }
+} 
+@media (max-width:330px){
+    .header--text__second{
+        font-size: 3rem;
+    }
+    
+} 
+
