@@ -22,7 +22,7 @@
 
 .bgNone {
   animation-name: bgNone;
-  animation-duration: 1s;
+  animation-duration: 1.3s;
   animation-fill-mode: forwards; }
 
 .bgShow {
@@ -94,6 +94,9 @@ nav ul li .nav-link:hover {
   z-index: 10;
   transition: left .5s ease;
   z-index: 12; }
+
+.Mobile-icon {
+  z-index: 11; }
 
 .overlay {
   z-index: 10;

@@ -15,7 +15,7 @@ let MOVE_THRESHOLD=150;
 
 
 menuIcon.addEventListener("click",e=>{
-  
+  console.log('i was clicked');
   showMenu();
 
 })

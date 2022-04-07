@@ -25,7 +25,7 @@
 
 
 }
-// Desktop Nav menu icons showning on hover state
+// Desktop Nav menu icons showning on hover
  nav ul li .nav-link{
     color: $deepblue;
     font-weight: 600;
@@ -71,7 +71,9 @@ nav ul li .nav-link:hover{
  transition: left .5s ease;
  z-index: 12;
 }
-
+.Mobile-icon{
+    z-index: 11;
+}
 .overlay{
     z-index: 10;
     display: none;
