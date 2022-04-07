@@ -124,7 +124,8 @@ nav ul li .nav-link:hover {
   opacity: 0;
   animation-timing-function: ease-in;
   font-family: "Boogaloo", cursive;
-  padding-top: 4rem; }
+  padding-top: 4rem;
+  font-weight: light; }
 
 .header--logo {
   top: 20%; }
