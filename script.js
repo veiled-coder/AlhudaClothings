@@ -46,11 +46,7 @@ function touchMove(e){
     console.log(moveX);
 }
 function touchEnd(e){
-    if (moveX < MOVE_THRESHOLD * Math.sign(moveX)) {
-     showMenu();
-     
-  
-      } 
+    
     if (moveX > MOVE_THRESHOLD * Math.sign(moveX)) {
        removeMenu()
       }
