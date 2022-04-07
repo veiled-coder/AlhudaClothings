@@ -90,14 +90,17 @@ nav ul li .nav-link:hover{
 }
 // header content
 
+.header--text__second{
+    // font-size: 2rem;
+    color: aliceblue;
+    font-family: $shadow;
+    top: 95%;
+
+  
+   
+}
 .header--text__first{
     font-size: 10rem;
-    color: aliceblue;
-    font-family: $philo;
-    // text-transform: uppercase;
-}
-.header--text__second{
-    font-size: 6rem;
     color: aliceblue;
     animation-name: bgShow;
     animation-delay: .2s;
@@ -107,7 +110,6 @@ nav ul li .nav-link:hover{
     animation-timing-function: ease-in;
     // font-family: ;
     font-family: $bungalow;
-    padding-top: 4rem;
     font-weight: light;
     
 }
@@ -125,7 +127,6 @@ nav ul li .nav-link:hover{
 
 
 
-
 // header content 
 @media (min-width:992px){
     .header--logo{
@@ -133,39 +134,20 @@ nav ul li .nav-link:hover{
          right: 10%;
 }
 }
-   
-   @media (max-width:600px){
-       .header--text__second{
-           font-size: 6rem;
-       }
-       .header--text__first{
 
-        font-size: 7rem;
-       }
-   } 
-   
-   @media (max-width:500px){
-    .header--text__second{
-        font-size: 4.5rem;
+@media (max-width:768px){
+    html{
+        font-size: 50%;
     }
-    .header--text__first{
+}
 
-     font-size: 6rem;
+@media (max-width:520px){
+    html{
+        font-size: 35%;
     }
-} 
+}
 @media (max-width:375px){
-    .header--text__second{
-        font-size: 4rem;
+    html{
+        font-size: 20%;
     }
-    .header--text__first{
-
-     font-size: 5rem;
-    }
-} 
-@media (max-width:330px){
-    .header--text__second{
-        font-size: 3rem;
-    }
-    
-} 
-
+}

@@ -109,13 +109,13 @@ nav ul li .nav-link:hover {
   z-index: 10;
   display: none; }
 
+.header--text__second {
+  color: aliceblue;
+  font-family: "Shadows Into Light", cursive;
+  top: 95%; }
+
 .header--text__first {
   font-size: 10rem;
-  color: aliceblue;
-  font-family: "Philosopher", sans-serif; }
-
-.header--text__second {
-  font-size: 6rem;
   color: aliceblue;
   animation-name: bgShow;
   animation-delay: .2s;
@@ -124,7 +124,6 @@ nav ul li .nav-link:hover {
   opacity: 0;
   animation-timing-function: ease-in;
   font-family: "Boogaloo", cursive;
-  padding-top: 4rem;
   font-weight: light; }
 
 .header--logo {
@@ -134,27 +133,17 @@ nav ul li .nav-link:hover {
   .header--logo {
     right: 10%; } }
 
-@media (max-width: 600px) {
-  .header--text__second {
-    font-size: 6rem; }
-  .header--text__first {
-    font-size: 7rem; } }
+@media (max-width: 768px) {
+  html {
+    font-size: 50%; } }
 
-@media (max-width: 500px) {
-  .header--text__second {
-    font-size: 4.5rem; }
-  .header--text__first {
-    font-size: 6rem; } }
+@media (max-width: 520px) {
+  html {
+    font-size: 35%; } }
 
 @media (max-width: 375px) {
-  .header--text__second {
-    font-size: 4rem; }
-  .header--text__first {
-    font-size: 5rem; } }
-
-@media (max-width: 330px) {
-  .header--text__second {
-    font-size: 3rem; } }
+  html {
+    font-size: 20%; } }
 
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
