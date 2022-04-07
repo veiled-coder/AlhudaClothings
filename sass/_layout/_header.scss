@@ -1,6 +1,6 @@
 // // GENERAL STYLE FOR THE WHOLE HEADER SECTION
 html{
-    font-size: 62.5%;
+    font-size: 50%;
 }
 .header{
     font-family: $roboto;
@@ -128,18 +128,15 @@ nav ul li .nav-link:hover{
 
 
 // header content 
+
 @media (min-width:992px){
+  
     .header--logo{
     
          right: 10%;
 }
 }
 
-@media (max-width:768px){
-    html{
-        font-size: 50%;
-    }
-}
 
 @media (max-width:520px){
     html{

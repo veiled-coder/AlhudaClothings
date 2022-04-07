@@ -48,7 +48,7 @@ body {
   padding-right: 3em; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 50%; }
 
 .header {
   font-family: "Roboto", sans-serif;
@@ -132,10 +132,6 @@ nav ul li .nav-link:hover {
 @media (min-width: 992px) {
   .header--logo {
     right: 10%; } }
-
-@media (max-width: 768px) {
-  html {
-    font-size: 50%; } }
 
 @media (max-width: 520px) {
   html {
