@@ -95,9 +95,6 @@ nav ul li .nav-link:hover {
   transition: left .5s ease;
   z-index: 12; }
 
-.Mobile-icon {
-  z-index: 20; }
-
 .overlay {
   z-index: 10;
   display: none; }
