@@ -54,13 +54,12 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 4rem;
   background-color: #6eb8f5c4;
-  overflow: hidden;
-  height: 90vh; }
+  overflow: hidden; }
   .header-containerDiv {
     background: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: radial-gradient(rgba(113, 166, 235, 0.712), rgba(6, 25, 41, 0.486)), url("/images/nikob4.jpg"); }
+    background-image: radial-gradient(rgba(109, 164, 209, 0.26), #0c253a), url("/images/nikob4.jpg"); }
 
 .nav, .MobileNav-bar {
   background-color: #6eb8f5;
@@ -112,7 +111,8 @@ nav ul li .nav-link:hover {
 
 .header--text__first {
   font-size: 10rem;
-  color: aliceblue; }
+  color: aliceblue;
+  font-family: "Philosopher", sans-serif; }
 
 .header--text__second {
   font-size: 6rem;
@@ -122,7 +122,9 @@ nav ul li .nav-link:hover {
   animation-duration: 2s;
   animation-fill-mode: forwards;
   opacity: 0;
-  animation-timing-function: ease-in; }
+  animation-timing-function: ease-in;
+  font-family: "Boogaloo", cursive;
+  padding-top: 4rem; }
 
 .header--logo {
   top: 20%; }
