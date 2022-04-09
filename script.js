@@ -6,9 +6,14 @@ mobileMenu=document.querySelector(".Mobile-menu--ul"),
 container=document.querySelector(".header"),
 overlay=document.querySelector(".overlay");
 
+// header hero animation
+window.onload = function() {
+  document.body.className = "loaded";
+  
 
+}
 
-
+// Touch slide menu 
 let initialX = 0;
 let moveX = 0;
 let MOVE_THRESHOLD=150;

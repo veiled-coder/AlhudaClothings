@@ -1,12 +1,13 @@
 // // GENERAL STYLE FOR THE WHOLE HEADER SECTION
 html{
-    font-size: 50%;
+    font-size: 62.5%;
 }
 .header{
     font-family: $roboto;
     font-size: 4rem;
     background-color: $bodyblue;
     overflow: hidden;
+    height: 85vh;
     
     
   
@@ -90,30 +91,39 @@ nav ul li .nav-link:hover{
 }
 // header content
 
-.header--text__second{
-    // font-size: 2rem;
+.header--text__first{
+    font-size: 10rem;
     color: aliceblue;
-    font-family: $shadow;
-    top: 95%;
+    font-family: $bungalow;
+    font-weight: light;
+    opacity: 0;
+    
+}
+
+.header--text__second{
+    font-size: 2rem;
+    color: aliceblue;
+    font-family: $mirinda;
+    font-weight: 100;
+    bottom: 1%;
+    opacity: 0;
 
   
    
 }
-.header--text__first{
-    font-size: 10rem;
-    color: aliceblue;
-    animation-name: bgShow;
-    animation-delay: .2s;
+// Animation for the Hero texts
+body.loaded .header--text__first{
+    animation-name: slideInLeft;
     animation-duration: 2s;
+    animation-delay: .5s;
     animation-fill-mode: forwards;
-    opacity: 0;
-    animation-timing-function: ease-in;
-    // font-family: ;
-    font-family: $bungalow;
-    font-weight: light;
-    
 }
-
+body.loaded .header--text__second{
+    animation-name: slideInBottom;
+    animation-duration: .5s;
+    animation-delay: 3s; 
+    animation-fill-mode: forwards;
+}
 .header--logo{
     top: 20%;
 }
@@ -136,15 +146,42 @@ nav ul li .nav-link:hover{
          right: 10%;
 }
 }
-
-
-@media (max-width:520px){
-    html{
-        font-size: 35%;
+@media (max-width:1200px){
+    .header--text__first{
+        font-size: 7rem;
     }
+}
+@media(max-width:991px){
+    .header--text__first{
+        font-size: 7rem;
+    }
+    .header--text__second{
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media (max-width:728px){
+    .header--text__first{
+        font-size: 6rem;
+    }
+    .header--text__second{
+        font-size: 1rem;
+    }
+}
+@media(max-width:600px){
+    
+}
+@media (max-width:480px){
+  .header--text__first{
+      font-size: 5rem;
+  }
+  
 }
 @media (max-width:375px){
-    html{
-        font-size: 20%;
+    .header--text__first{
+        font-size: 3.7rem;
     }
+    
 }
+
