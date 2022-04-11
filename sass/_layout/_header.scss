@@ -2,6 +2,9 @@
 html{
     font-size: 62.5%;
 }
+.header--logo{
+    top: 20%;
+}
 .header{
     font-family: $roboto;
     font-size: 4rem;
@@ -29,7 +32,7 @@ background-image:radial-gradient(rgba(109, 164, 209, 0.26),rgb(12, 37, 58)),url(
     font-family: $roboto;
  
 &-icon{
-    color: rgba(36, 83, 235, 0.815);
+    
     height: 3rem;
 }
 
@@ -72,14 +75,21 @@ nav ul li .nav-link:hover{
 // MOBILE MENU
 
 
-
-
 .Mobile-menu--ul{
  top: 0;
  left: 100%;
  z-index: 10;
  transition: left .5s ease;
  z-index: 12;
+ height: 85%;
+ font-family: $mirinda;
+ background-color: aliceblue;
+}
+.Mobile-menu--ul li .al {
+    color:$menubg;
+    // color: rgba(134, 199, 236);
+    
+    
 }
 .Mobile-icon{
     z-index: 11;
@@ -89,6 +99,39 @@ nav ul li .nav-link:hover{
     display: none;
   
 }
+//gallery accordion list
+
+#galleryInput{
+    display: none;
+}
+ 
+[id^=gallery]:checked +.gallery--ul__list{
+    display: flex;
+    
+
+}
+
+.gallery--ul__list{
+    display: none;
+    background-color:$bodyblue;
+    animation-name: fadeIn;
+    animation-duration: .5s;
+    width: 50%;
+    
+}
+.gallery--ul__list li  {
+    color:$condensedblue;
+    font-family: $bungalow;
+    font-weight: lighter;
+    letter-spacing: 2;
+    font-size: 2rem;
+}
+
+
+
+
+
+
 // header content
 
 .header--text__first{
@@ -119,22 +162,11 @@ body.loaded .header--text__first{
     animation-fill-mode: forwards;
 }
 body.loaded .header--text__second{
-    animation-name: slideInBottom;
+    animation-name: fadeIn;
     animation-duration: .5s;
     animation-delay: 3s; 
     animation-fill-mode: forwards;
 }
-.header--logo{
-    top: 20%;
-}
-
-
-
-
-
-
-
-
 
 
 // header content 
@@ -177,11 +209,15 @@ body.loaded .header--text__second{
       font-size: 5rem;
   }
   
+  
 }
 @media (max-width:375px){
     .header--text__first{
         font-size: 3.7rem;
     }
     
+    .gallery--ul__list li{
+        font-size: 1.5rem;
+    }
 }
 

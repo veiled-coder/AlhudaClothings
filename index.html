@@ -41,6 +41,12 @@
             </ul>
 
         </nav>
+
+
+        
+
+
+        
         <!--  mobile navigation-->
         <nav class="MobileNav-Container d-lg-none" id="Mobile-nav--container">
             <ul class="MobileNav-bar d-flex justify-content-between align-items-center list-unstyled h-10">
@@ -49,23 +55,25 @@
             </ul>
         
             
-            <ul id="Mobile-Menu" class="Mobile-menu--ul h-75 w-50 px-sm-4 px-0 py-5 fs-2 list-unstyled d-flex flex-column  justify-content-between align-items-center position-absolute" style="background-color: aliceblue;">
-                    <li class="nav-li nav-li--home    d-flex flex-column align-items-center px-0"><img src="images/home-icon.png" class="nav-icon "><a class=" nav-link p-0">HOME</a></li>
-                    <li class="nav-li Mobilenav-li--about   d-flex flex-column align-items-center px-0"><img src="images/about-icon.svg" class="nav-icon "><a class=" nav-link p-0">ABOUT</a></li>
-                    <li class="nav-li nav-li--gallery d-flex flex-column align-items-center px-0 position-relative">
+            <ul id="Mobile-Menu" class="Mobile-menu--ul  w-50 h-100 px-sm-4 px-0 py-5 fs-2 list-unstyled  position-absolute">
+                    <li class="nav-li--home   d-flex flex-column align-items-center px-0"><img src="images/home-icon.png" class="nav-icon "><a class="nav-link al p-0">HOME</a></li>
+                    <li class="nav-li Mobilenav-li--about   d-flex flex-column align-items-center px-0 pt-5"><img src="images/about-icon.svg" class="nav-icon "><a class="al nav-link p-0">ABOUT</a></li>
+                    <li class="nav-li d-flex flex-column justify-content-center align-items-center pt-5">
+                        <label for="galleryInput" class=" d-flex flex-column align-items-center ">
                         <img src="images/gallery-icon.png" class="nav-icon ">
-                        <a class=" nav-link p-0">GALLERY</a>
-                        <div class="nav-li--gallery_display position-absolute w-100 top-100">
-                        <ul class="nav-li--gallery_displayUl fs-4 w-100 list-unstyled d-flex flex-column align-items-center justify-content-around">
-                            <li><a>Jilbab</a></li>
-                            <li><a>Khimar</a></li>
-                            <li><a>Abaya</a></li>
-                            <li><a>Nikob & Socks</a></li>
-                            <li><a>Casual Wears</a></li>
+                        <a class="al gallery--text nav-link p-0">GALLERY</a>
+                        </label>
+                        <input type="checkbox" id="galleryInput">
+                        <ul class="gallery--ul__list  w-75 h-100 fs-4 list-unstyled  flex-column align-items-center justify-content-around mt-3 py-3 rounded">
+                            <li class="mt-3"><a>Jilbab</a></li>
+                            <li class="mt-3"><a>Khimar</a></li>
+                            <li class="mt-3"><a>Abaya</a></li>
+                            <li class="mt-3"><a>Nikob & Socks</a></li>
+                            <li class="mt-3"><a>Casual Wears</a></li>
                         </ul>
-                        </div>
+                   
                     </li>
-                    <li class="nav-li Mobilenav-li--contact d-flex flex-column align-items-center px-0"><img src="images/contact-icon.png" class=" nav-icon "><a class=" nav-link p-0">CONTACT</a></li>
+                    <li class="nav-li Mobilenav-li--contact d-flex flex-column align-items-center px-0 pt-5"><img src="images/contact-icon.png" class=" nav-icon "><a class="al nav-link p-0">CONTACT</a></li>
                 </ul>
               
                 <aside class="overlay position-absolute top-0 w-100 h-100"></aside>   
@@ -99,8 +107,7 @@
     
             
             
-            <div class="fadein ty"></div>
-
+          
 
 
 
