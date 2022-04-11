@@ -100,7 +100,7 @@ html {
     background-image: radial-gradient(rgba(109, 164, 209, 0.26), #0c253a), url("/images/nikob4.jpg"); }
 
 .nav, .MobileNav-bar {
-  background-color: rgba(134, 199, 236, 0.76);
+  background-color: #6eb8f5;
   font-family: "Roboto", sans-serif; }
   .nav-icon, .MobileNav-bar-icon {
     height: 3rem; }
