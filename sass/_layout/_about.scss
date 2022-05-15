@@ -1,76 +1,329 @@
+.about{
+    background-color: $bodyblue;
+    height: auto;
+overflow-x: hidden;
+
+}
+
+.circles{
+  
+    height: auto;
+    width: 100vw;
+    margin: auto;
+    z-index: 10;
+   padding-right:5%;
+    
+}
+.circle1{
+    background-color: $navblue;
+   width: 65%;
+   padding-top: 65%;
+   height: auto;
+ border-radius: 50%;
  
-//  .about{
-//      grid-column: 2/5;
-//      grid-row: 2/3;
-//      padding-top: 6rem;
-//      display: grid;
-//      grid-template-columns: repeat(3,1fr);
-//     padding-bottom: 5rem;
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
+
+ 
+}
+.circle1 p{
+    
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.3vw;
+  line-height: 2;
+  font-family: $mirinda;
+  
+}
+.circle1 h3{
+    position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4vw;
+  
+}
+.circle2{ 
+    border-radius: 50%;
+    width: 70%;
+    height: auto;
+    padding-top: 70%;
+    background-image: url(/images/veiled-woman-walking.jpeg);
+    background-size: cover;
+    background-position: center;
+    top: 0%;
+    left: 80%;
+    z-index: -2;
    
-// &-roundDiv{
-//     position: relative;
-//     grid-column: 1/3;
-//     display: flex;
-   
+  
+}
+.about--huda{
+    width: 100%;
+    background-color: $navblue;
+}
+.about--circle3{
+    width: 50%;
+    padding-top: 50%;
+    height: auto;
+    background-color: wheat;
+    border-radius: 50%;
+    shape-outside: circle();
+    float: right;
+    
+}
+.about--huda__h3{
+    font-size: 4vw;
+}
+.about--text{
+    font-size: 3vw;
+    font-family: $abel;
+ text-align: justify;
+ line-height: 1.8;
+ color: rgb(9, 9, 68);
+
+    
+}
+@media (min-width: 992px) { 
+    .circles{
+        padding: 0;
+    }
+    .circle1{
+        
+        width: 55%;
+        padding-top: 55%;
+        
+    }
+    .circle1 p,.about--text{
+        font-size: 1.2vw;
+    }
+    .circle1 h3{
+        font-size: 3vw;
+    }
+    .circle2{
+        left: 80%;
+        width: 60%;
+        padding-top: 60%;
+    }
+    .about--huda{
+        width: 80%;
+       
+    }
+ }
+
+// make sure your padding top is the same as your width and make your height auto
+// .circles{
+ 
+//     width: 100vw;
+//     overflow-x: hidden;
 // }
-// &-roundImg{
-//     width: 35rem;
-//     height: 35rem;
-//     border-radius: 50%;
-//     z-index: 1;
-//     position: absolute;
-//     right:20%;
-//     object-fit: cover;
-// }    
-// &-round__color{
-//     width: 50rem;
-//     height: 50rem;
+// .circle1{
 //     background-color: $navblue;
-//     border-radius: 50%;
-//     z-index: 5;
-//     display: flex;
-//     justify-content: center;
-// }
-// &-round__text{
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-around;
-//     align-items: center;
-//     padding-top: 4rem;
-//     padding-bottom: 4rem;
     
-// }
-// &-round__h3{
-//     @extend %flexcolon;
-//     justify-content: center;
-//     align-items: center;
-//     justify-content: space-between;
-//     @extend %contentext;
-// }
-// &-text{
-// grid-column: 3/4;
-// }
-
-// &-h2{
-// @include h2style($deepblue);
-
-
-// }
-
-
-// &-text__img{
-//     height: 25rem;
-//     width: 25rem;
-//     object-fit: cover;
 //     border-radius: 50%;
-//     shape-outside: circle();
-//     float: right;
-//     margin-left: 4rem;
-// }
-// &-text__p{
-//     text-align: justify;
-//     @extend %contentext;
+//     z-index: 10;
+//     font-family: $roboto;
+
+// color: black;
     
+//    &--text{
+      
+//        font-size: 1.5rem;
+//        line-height: 2;
+      
+//    }
+//   &--h1{
+//     top: 10%;
+//     font-size: 3rem;
+//     font-family: $mirinda;
+//     text-transform: uppercase;
+   
+//    color: $condensedblue;
+//     // text-transform: uppercase;
+//   }
+       
+
+//    }
+// .circle2{
+//    z-index: 5;
+//    width:auto;
+//    margin-left: -15%;
+   
+// }
+// .circle2--img{
+// object-fit: cover;    
+// // width: 35rem;
+// // height: 35rem;
+// border-radius: 50%;
+// z-index: 5; 
 // }
 
-// }
+
+// // @media (max-width:991px){
+// //     .circle1{
+// //     width: 45em;
+// //     height: 45em;
+// //     margin: auto;
+// //     }
+// //     .circle2{
+// //    left: -10%;
+
+// //     }
+// //     .circle2--img{
+// //     width: 35em;
+// //     height: 35em;
+// //     }
+// // }
+
+// // @media (max-width:750px){
+// //     .circle1{
+// //     width: 40rem;
+// //     height: 40rem;
+    
+// //     }
+    
+// //     .circle2--img{
+// //     width: 31rem;
+// //     height: 31rem;
+// //     }
+// // }
+
+
+// // @media (max-width:680px){
+// //     .circle1{
+// //     width: 38rem;
+// //     height: 38rem;
+    
+// //     }
+    
+// //     .circle2--img{
+// //     width: 29rem;
+// //     height: 29rem;
+// //     }
+// // }
+
+// // @media (max-width:620px){
+// //     .circle1{
+// //     width: 35rem;
+// //     height: 35rem;
+    
+// //     }
+    
+// //     .circle2--img{
+// //     width: 27rem;
+// //     height: 27rem;
+// //     }
+// //     .circle1--text{
+// //         font-size: 1.3rem;
+// //     }
+// //     .circle1--h1{
+// //         top: 8%;
+// //     }
+// // }
+
+// // @media (max-width:588px){
+// //     .circle1{
+// //     width: 33rem;
+// //     height: 33rem;
+    
+// //     }
+    
+// //     .circle2--img{
+// //     width: 25rem;
+// //     height: 25rem;
+// //     }
+    
+// // }
+
+// // @media (max-width:540px){
+// //    .circle1{
+// //        width: 32rem;
+// //     height: 32rem;
+// //     }
+    
+   
+// //     .circle2--img{
+// //         width: 23rem;
+// //         height: 23rem;
+// //     }
+// //     .circle1--text{
+// //         font-size: 1.15rem;
+// //     }
+// //     .circle1--h1{
+// //         font-size: 2rem;
+// //     }
+// // }
+// // @media(max-width:490px){
+// //     .circle1{
+// //         width: 29rem;
+// //         height: 29rem;
+// //     }
+// //     .circle1--text{
+// //         font-size: 1.05rem;
+// //     }
+// // }
+// // @media(max-width:460px){
+// //     .circle1{
+// //         width: 27rem;
+// //         height: 27rem;
+        
+// //     }
+// //     .circle1--text{
+// //         font-size: 1rem;
+// //     }
+// //     .circle2--img{
+// //         width:19rem;
+// //         height: 19rem;
+// //     }
+// // }
+// // @media (max-width:400px){
+// //     .circle1{
+// //         width: 23rem;
+// //      height: 23rem;
+// //      }
+     
+    
+// //      .circle2--img{
+// //          width: 18rem;
+// //          height: 18rem;
+// //      }
+// //      .circle1--text{
+// //          font-size: .85rem;
+// //      }
+// //  }
+ 
+
+// //  @media (max-width:360px){
+// //     .circle1{
+// //         width: 22rem;
+// //      height: 22rem;
+// //      }
+     
+    
+// //      .circle2--img{
+// //          width: 16rem;
+// //          height: 16rem;
+         
+// //      }
+// //      .circle1--text{
+// //          font-size: .8rem;
+// //      }
+// //      .circle2{
+// //          left: -4%;
+// //      }
+     
+// //  }
+// //  @media (max-width:320px){
+// //      .circle1{
+// //          width: 19rem;
+// //          height: 19rem;
+// //      }
+// //      .circle1--text{
+// //          font-size: .7rem;
+// //      }
+// //      .circle1--h1{
+// //          font-size: 1.5rem;
+// //      }
+// //  }

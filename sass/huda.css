@@ -81,11 +81,19 @@ body {
   padding-left: 3em;
   padding-right: 3em; }
 
+h3, .h3 {
+  font-family: "Boogaloo", cursive; }
+
 html {
   font-size: 62.5%; }
 
 .header--logo {
   top: 20%; }
+
+body {
+  max-width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden; }
 
 .header {
   font-family: "Roboto", sans-serif;
@@ -228,6 +236,96 @@ body.loaded .header--text__second {
     font-size: 3.7rem; }
   .gallery--ul__list li {
     font-size: 1.5rem; } }
+
+.about {
+  background-color: #6eb8f5c4;
+  height: auto;
+  overflow-x: hidden; }
+
+.circles {
+  height: auto;
+  width: 100vw;
+  margin: auto;
+  z-index: 10;
+  padding-right: 5%; }
+
+.circle1 {
+  background-color: #6eb8f5;
+  width: 65%;
+  padding-top: 65%;
+  height: auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
+
+.circle1 p {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.3vw;
+  line-height: 2;
+  font-family: "Merienda", cursive; }
+
+.circle1 h3, .circle1 .h3 {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4vw; }
+
+.circle2 {
+  border-radius: 50%;
+  width: 70%;
+  height: auto;
+  padding-top: 70%;
+  background-image: url(/images/veiled-woman-walking.jpeg);
+  background-size: cover;
+  background-position: center;
+  top: 0%;
+  left: 80%;
+  z-index: -2; }
+
+.about--huda {
+  width: 100%;
+  background-color: #6eb8f5; }
+
+.about--circle3 {
+  width: 50%;
+  padding-top: 50%;
+  height: auto;
+  background-color: wheat;
+  border-radius: 50%;
+  shape-outside: circle();
+  float: right; }
+
+.about--huda__h3 {
+  font-size: 4vw; }
+
+.about--text {
+  font-size: 3vw;
+  font-family: "Abel", sans-serif;
+  text-align: justify;
+  line-height: 1.8;
+  color: #090944; }
+
+@media (min-width: 992px) {
+  .circles {
+    padding: 0; }
+  .circle1 {
+    width: 55%;
+    padding-top: 55%; }
+  .circle1 p, .about--text {
+    font-size: 1.2vw; }
+  .circle1 h3, .circle1 .h3 {
+    font-size: 3vw; }
+  .circle2 {
+    left: 80%;
+    width: 60%;
+    padding-top: 60%; }
+  .about--huda {
+    width: 80%; } }
 
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
@@ -5829,8 +5927,32 @@ textarea.form-control-lg {
 .top-0 {
   top: 0 !important; }
 
+.top-10 {
+  top: 10% !important; }
+
+.top-20 {
+  top: 20% !important; }
+
+.top-30 {
+  top: 30% !important; }
+
+.top-40 {
+  top: 40% !important; }
+
 .top-50 {
   top: 50% !important; }
+
+.top-60 {
+  top: 60% !important; }
+
+.top-70 {
+  top: 70% !important; }
+
+.top-80 {
+  top: 80% !important; }
+
+.top-90 {
+  top: 90% !important; }
 
 .top-100 {
   top: 100% !important; }
@@ -5838,8 +5960,32 @@ textarea.form-control-lg {
 .bottom-0 {
   bottom: 0 !important; }
 
+.bottom-10 {
+  bottom: 10% !important; }
+
+.bottom-20 {
+  bottom: 20% !important; }
+
+.bottom-30 {
+  bottom: 30% !important; }
+
+.bottom-40 {
+  bottom: 40% !important; }
+
 .bottom-50 {
   bottom: 50% !important; }
+
+.bottom-60 {
+  bottom: 60% !important; }
+
+.bottom-70 {
+  bottom: 70% !important; }
+
+.bottom-80 {
+  bottom: 80% !important; }
+
+.bottom-90 {
+  bottom: 90% !important; }
 
 .bottom-100 {
   bottom: 100% !important; }
@@ -5847,8 +5993,32 @@ textarea.form-control-lg {
 .start-0 {
   left: 0 !important; }
 
+.start-10 {
+  left: 10% !important; }
+
+.start-20 {
+  left: 20% !important; }
+
+.start-30 {
+  left: 30% !important; }
+
+.start-40 {
+  left: 40% !important; }
+
 .start-50 {
   left: 50% !important; }
+
+.start-60 {
+  left: 60% !important; }
+
+.start-70 {
+  left: 70% !important; }
+
+.start-80 {
+  left: 80% !important; }
+
+.start-90 {
+  left: 90% !important; }
 
 .start-100 {
   left: 100% !important; }
@@ -5856,8 +6026,32 @@ textarea.form-control-lg {
 .end-0 {
   right: 0 !important; }
 
+.end-10 {
+  right: 10% !important; }
+
+.end-20 {
+  right: 20% !important; }
+
+.end-30 {
+  right: 30% !important; }
+
+.end-40 {
+  right: 40% !important; }
+
 .end-50 {
   right: 50% !important; }
+
+.end-60 {
+  right: 60% !important; }
+
+.end-70 {
+  right: 70% !important; }
+
+.end-80 {
+  right: 80% !important; }
+
+.end-90 {
+  right: 90% !important; }
 
 .end-100 {
   right: 100% !important; }
