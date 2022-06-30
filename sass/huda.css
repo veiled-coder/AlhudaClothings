@@ -295,13 +295,16 @@ body.loaded .header--text__second {
   width: 50%;
   padding-top: 50%;
   height: auto;
-  background-color: wheat;
+  background-image: url(/images/alhuda.jpg);
+  background-position: center;
+  background-size: contain;
   border-radius: 50%;
   shape-outside: circle();
   float: right; }
 
-.about--huda__h3 {
-  font-size: 4vw; }
+.about--huda h3, .about--huda .h3 {
+  font-size: 4vw;
+  color: #0A200B; }
 
 .about--text {
   font-size: 3vw;
@@ -326,6 +329,10 @@ body.loaded .header--text__second {
     padding-top: 60%; }
   .about--huda {
     width: 80%; } }
+
+.you {
+  background-color: green;
+  height: 100vh; }
 
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)

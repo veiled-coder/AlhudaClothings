@@ -68,14 +68,18 @@ overflow-x: hidden;
     width: 50%;
     padding-top: 50%;
     height: auto;
-    background-color: wheat;
+    background-image: url(/images/alhuda.jpg);
+    background-position: center;
+    background-size: contain;
+    // background-color: red;
     border-radius: 50%;
     shape-outside: circle();
     float: right;
     
 }
-.about--huda__h3{
+.about--huda h3{
     font-size: 4vw;
+    color: $deepgreen;
 }
 .about--text{
     font-size: 3vw;

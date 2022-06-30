@@ -1,5 +1,5 @@
 
-// overraide bootsrap by defining the variables before declaration
+// overraide bootsrap by defining the variables before declaration of the real bootstratp
 
 @import "_abstracts/custom-variables";
 @import '_abstracts/variables';
@@ -8,6 +8,7 @@
 @import "_base/reset";
 @import "_layout/header";
 @import "_layout/about";
+@import "_layout/you";
 
 
 @import "node_modules/bootstrap/scss/bootstrap";
